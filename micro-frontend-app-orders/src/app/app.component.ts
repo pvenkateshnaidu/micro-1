@@ -1,15 +1,15 @@
+import { Component } from '@angular/core';
 import { Location } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { environment } from '../environments/environment';
+import { environment } from 'src/environments/environment';
 import { NavigationService } from './core/services/navigation.service';
 
 @Component({
-  selector: 'app-micro-frontend-orders-root',
+  selector: 'gforce-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   private readonly previousUrl: string;
 
   constructor(private readonly router: Router,

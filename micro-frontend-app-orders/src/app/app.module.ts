@@ -1,22 +1,26 @@
-import { DoBootstrap, Injector, NgModule } from '@angular/core';
-import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
-import { NavigationEnd, Router } from '@angular/router';
-import { environment } from '../environments/environment';
+import { DoBootstrap, Injector, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationService } from './core/services/navigation.service';
-
+import { NavigationEnd, Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
+import { createCustomElement } from '@angular/elements';
+import { HomeComponent } from './home/home.component';
+import { GforceComponent } from './gforce/gforce.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    GforceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule,HttpClientModule
   ],
-  providers: [],
+  providers: [NavigationService],
   entryComponents: [AppComponent],
 })
 export class AppModule implements DoBootstrap {
@@ -38,6 +42,6 @@ export class AppModule implements DoBootstrap {
 
   public ngDoBootstrap() {
     const myElement = createCustomElement(AppComponent, { injector: this.injector });
-    customElements.define('app-micro-frontend-orders-root', myElement);
+    customElements.define('gforce-root', myElement);
   }
 }

@@ -1,109 +1,97 @@
-Orders 
-==============================================================================================
+# Angular 13 File upload example with Progress bar
 
-### Fully functional Angular app as Web Component / Custom Element 
+In this tutorial, I will show you way to build an Angular File upload example using Bootstrap, FormData and Progress Bar.
 
-Can be hosted separately and referenced at runtime in Envelope app.
+![angular-13-file-upload-example-progress-bar-bootstrap](angular-13-file-upload-example-progress-bar-bootstrap.png)
 
----
-#### Technologies and tools used
+For more detail, please visit:
+> [Angular 13 File upload example with Progress bar & Bootstrap](https://www.bezkoder.com/angular-13-file-upload/)
 
-- [Angular](https://angular.io/) with use of [Angular Elements](https://angular.io/guide/elements)
-- [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-- [ngx-build-plus](https://github.com/manfredsteyer/ngx-build-plus)
+> [Angular Material File upload example with Progress bar](https://www.bezkoder.com/angular-material-12-file-upload/)
 
-Current status:
-- :heavy_check_mark: Angular 8
-- :heavy_check_mark: Lazy loading
-- :heavy_check_mark: Lightweight bundles, size of micro app reduced to minimum
+Rest APIs server for this Angular Client:
+> [Node Express File Upload Rest API example](https://www.bezkoder.com/node-js-express-file-upload/)
 
-<details>
-  <summary>Details</summary>
-  
-    Date: 2019-06-17T17:43:28.547Z
-    Hash: 0cbd6d10ab88118ad039
-    Time: 6103ms
-    chunk {0} main-es5.js (main) 9.22 kB [entry] [rendered]
-    chunk {1} 1-es5.js () 3.48 kB  [rendered]
-    chunk {2} 2-es5.js () 2.37 kB  [rendered]
-    chunk {3} 3-es5.js () 4.29 kB  [rendered]
-    chunk {4} 4-es5.js () 4.29 kB  [rendered]
-    chunk {5} 5-es5.js () 1.91 kB  [rendered]
-    chunk {scripts} scripts.js (scripts) 13.3 kB [entry] [rendered]
-                                                                                   
-    Date: 2019-06-17T17:43:32.376Z
-    Hash: bd37670c2c0d70a4f024
-    Time: 3803ms
-    chunk {0} main-es2015.js (main) 9.11 kB [entry] [rendered]
-    chunk {1} 1-es2015.js () 3.4 kB  [rendered]
-    chunk {2} 2-es2015.js () 2.29 kB  [rendered]
-    chunk {3} 3-es2015.js () 4.16 kB  [rendered]
-    chunk {4} 4-es2015.js () 4.15 kB  [rendered]
-    chunk {5} 5-es2015.js () 1.77 kB  [rendered]
-    chunk {scripts} scripts.js (scripts) 13.3 kB [entry] [rendered]
+> [Node Express File Upload with Google Cloud Storage example](https://www.bezkoder.com/google-cloud-storage-nodejs-upload-file/)
 
-![image](bundles-load.png)
-</details>
+> [Node Express File Upload to MongoDB example](https://www.bezkoder.com/node-js-upload-store-images-mongodb/)
 
-- :heavy_check_mark: Angular router fully working (:grey_exclamation: with additional boilerplate)
-- :x: Ivy compiler [[not supported yet]](https://github.com/angular/angular/issues/30262#issuecomment-497101996)
+> [Spring Boot Multipart File upload (to static folder) example](https://www.bezkoder.com/spring-boot-file-upload/)
 
----
-#### Pros:
+> [Spring Boot Multipart File upload (to database) example](https://www.bezkoder.com/spring-boot-upload-file-database/)
 
-- Tiny, small projects where business cases / domains are separated
-(let's say, some kind of microservices on frontend),
-- Fast, independent builds and feature delivery
-- Blazing fast deployment of micro application,
-- Much less conflicts comparing to one monolith app developed by multiple teams,
-- Content not loaded, until used (lazy loading of micro applications / components,
-  regardless of the technologies used inside),
-- Easier to remove from the entire system, easier to transfer to another,
-- Complexity of whole frontend project scales more horizontally instead of vertically, 
-- Angular is not an only option.
+More practice:
+> [Angular with Firebase Storage: File Upload/Display/Delete example](https://www.bezkoder.com/angular-13-firebase-storage/)
 
-#### Cons:
+> [Angular CRUD Application example with Web API](https://www.bezkoder.com/angular-13-crud-example/)
 
-- Can be sometimes too coupled to Web Component / Angular Elements specifics,
-- Boilerplate in every app to handle architecture and navigation
-  (Angular Router is not ready for that case out of the box),
-- Requires maintenance of additional Envelope app and shared services, guards etc.
-  which is sometimes barely related to business cases, can be time-consuming
-  and hard to debug,
-- The less people work on the whole solution, the less it pays off,
-- Too complex and over-designed solution if whole application and business
-  cases are quite simple.
+> [Angular JWT Authentication & Authorization with Web API](https://www.bezkoder.com/angular-13-jwt-auth/)
 
----
-#### Setup / Usage / How to
+> [Angular Pagination example with ngx-pagination](https://www.bezkoder.com/angular-13-pagination-ngx/)
 
-###### Development server
+Fullstack with Node Express:
+> [Angular + Node Express + MySQL example](https://www.bezkoder.com/angular-13-node-js-express-mysql/)
 
-Run `npm run start` for a dev server. Navigate to `http://localhost:4201/`.
-The app will automatically reload if you change any of the source files.
-You can also test production setup running `npm run start:prod`
+> [Angular + Node Express + PostgreSQL example](https://www.bezkoder.com/angular-13-node-js-express-postgresql/)
 
-###### Build
+> [Angular + Node Express + MongoDB example](https://www.bezkoder.com/mean-stack-crud-example-angular-13/)
 
-Run `npm run build` to build the project.
-The build artifacts will be stored in the `dist/` directory.
-Use `npm run build:aws` if you are hosting micro app just at different context (not domain)
-or if are using some kind of gateway also for frontend assets and relative request path contexts are forwarded 
-deep into the infrastructure.
+> [Angular + Node Express: File upload example](https://www.bezkoder.com/angular-13-node-express-file-upload/)
 
-###### Serve production build statics
+> [Angular + Node Express: JWT Authentication and Authorization example](https://www.bezkoder.com/node-js-angular-13-jwt-auth/)
 
-Run `npm run server`
+Fullstack with Spring Boot:
+> [Angular + Spring Boot + H2 Embedded Database example](https://www.bezkoder.com/spring-boot-angular-13-crud/)
 
-###### Running unit tests
+> [Angular + Spring Boot + MySQL example](https://www.bezkoder.com/spring-boot-angular-13-mysql/)
 
-Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> [Angular + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-angular-13-postgresql/)
 
-###### Running end-to-end tests
+> [Angular + Spring Boot + MongoDB example](https://www.bezkoder.com/angular-13-spring-boot-mongodb/)
 
-Run `npm run e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+> [Angular + Spring Boot: File upload example](https://www.bezkoder.com/angular-13-spring-boot-file-upload/)
 
----
-#### Areas for improvements
+> [Angular + Spring Boot: JWT Authentication and Authorization example](https://www.bezkoder.com/angular-13-spring-boot-jwt-auth/)
 
-- The less boilerplate and coupled to WC code the better
+Fullstack with Django:
+> [Angular + Django example](https://www.bezkoder.com/django-angular-13-crud/)
+
+> [Angular + Django + MySQL](https://www.bezkoder.com/django-angular-mysql/)
+
+> [Angular + Django + PostgreSQL](https://www.bezkoder.com/django-angular-postgresql/)
+
+Serverless with Firebase:
+> [Angular 13 Firebase CRUD with Realtime DataBase | AngularFireDatabase](https://www.bezkoder.com/angular-13-firebase-crud/)
+
+> [Angular 13 Firestore CRUD example with AngularFireStore](https://www.bezkoder.com/angular-13-firestore-crud-angularfirestore/)
+
+> [Angular 13 Firebase Storage: File Upload/Display/Delete example](https://www.bezkoder.com/angular-13-firebase-storage/)
+
+Integration (run back-end & front-end on same server/port)
+> [How to integrate Angular with Node Restful Services](https://www.bezkoder.com/integrate-angular-12-node-js/)
+
+> [How to Integrate Angular with Spring Boot Rest API](https://www.bezkoder.com/integrate-angular-12-spring-boot/)
+
+## Development server
+
+Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

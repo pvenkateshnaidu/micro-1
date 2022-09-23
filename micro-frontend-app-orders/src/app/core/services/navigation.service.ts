@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class NavigationService {
-  private lastSuccessfulNavigationUrl: string;
+  private lastSuccessfulNavigationUrl!: string;
 
   public setLastSuccessfulNavigationUrl(url: string): void {
     this.lastSuccessfulNavigationUrl = url;
