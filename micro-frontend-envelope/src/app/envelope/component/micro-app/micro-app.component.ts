@@ -11,8 +11,8 @@ declare const SOURCES_URL_PREFIX: string;
 export class MicroAppComponent implements OnInit {
   private readonly CUSTOM_ELEMENT_CONTAINER_ID = 'micro-app-web-component';
 
-  private appSelector = 'app-micro-frontend-orders-root';
-  private appUrlPrefix = `${ SOURCES_URL_PREFIX }/micro-frontend-app-orders`;
+  private appSelector = 'gforce-root';
+  private appUrlPrefix = `${ SOURCES_URL_PREFIX }/gforce`;
 
   public ngOnInit() {
     const content = document.getElementById(this.CUSTOM_ELEMENT_CONTAINER_ID);
@@ -33,7 +33,7 @@ export class MicroAppComponent implements OnInit {
   private loadScripts(containerElement: HTMLElement, url: string) {
     for (const standard of ['es5', 'es2015']) {
       const script = document.createElement('script');
-      script.src = `${ url }/main-${ standard }.js`;
+      script.src = `${ url }/main.js`;
       if ('es5' === standard) {
         script.noModule = true;
       } else if ('es2015' === standard) {
