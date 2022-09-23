@@ -12,7 +12,7 @@ export class MicroAppComponent implements OnInit {
   private readonly CUSTOM_ELEMENT_CONTAINER_ID = 'micro-app-web-component';
 
   private appSelector = 'gforce-root';
-  private appUrlPrefix = `${ SOURCES_URL_PREFIX }/gforce`;
+  private appUrlPrefix = `${ SOURCES_URL_PREFIX }`;
 
   public ngOnInit() {
     const content = document.getElementById(this.CUSTOM_ELEMENT_CONTAINER_ID);
